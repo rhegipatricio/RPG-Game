@@ -7,14 +7,37 @@ body {
 	font-family: Papyrus, fantasy;
 }
 
-
-
 .characterCard {
 	float: left;
-	text-align: center;
+	margin-bottom: 20px;
+	margin-left: 20px;
 }
 
+.characters {
+	clear: both;
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+
 .enemyArea {
+	clear: both;
+	float: left;
+}
+
+.currentTitan {
+	clear: both;
+	float: left;
+}
+
+.fightArea {
+	clear: both;
+	float: left;
+}
+
+
+.battle {
 	clear: both;
 	float: left;
 }
