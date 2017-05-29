@@ -7,4 +7,7 @@ $(document).ready(function() {
 
 //These are the Variables
 
-var = 
+var eren 	 = 100
+var annie 	 = 120
+var armored  = 150
+var colossus = 180
