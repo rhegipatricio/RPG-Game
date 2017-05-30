@@ -129,7 +129,12 @@ var colossus = document.getElementByID("colossus")
 					$("#armoredOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
 			});
 	}
+	//Attack Function in battle
+	function attack(damage) {
+		$("#attack").on("click", function(){
+			$
+		});
 
-
+	}
 
 }
