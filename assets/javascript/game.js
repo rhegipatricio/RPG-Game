@@ -18,12 +18,14 @@ var eren 	 = 100
 var annie 	 = 120
 var armored  = 150
 var colossus = 180
+var wins
+var losses
 
 //When Mysterious Titan is clicked/chosen, these functions take place
 	$("#eren").on("click" function (){
 		$("#characterCard").replaceWith("<h2> Your Character </h2>", $("#eren"));
 		$("#eren").removeClass("characterCard").addClass("playerChoice");
-		$("#enemyChoice").replaceWith($("#annie, #armored, #colossus"));
+		$("#opponentChoice").replaceWith($("#annie, #armored, #colossus"));
 		$("#annie, #armored, #colossus").removeClass("characterCard").addClass("remainingOpponents");
 		$("#eren").attr("id", "erenPlayer");
 		$("#annie").attr("id", "annieOpponent");
@@ -36,7 +38,7 @@ var colossus = 180
 	$("#annie").on("click" function (){
 		$("#characterCard").replaceWith("<h2> Your Character </h2>", $("#annie"));
 		$("#annie").removeClass("characterCard").addClass("playerChoice");
-		$("#enemyChoice").replaceWith($("#eren, #armored, #colossus"));
+		$("#opponentChoice").replaceWith($("#eren, #armored, #colossus"));
 		$("#eren, #armored, #colossus").removeClass("characterCard").addClass("remainingOpponents");
 		$("#annie").attr("id", "anniePlayer");
 		$("#eren").attr("id", "erenOpponent");
@@ -49,7 +51,7 @@ var colossus = 180
 	$("#armored").on("click" function(){
 		$("#characterCard").replaceWith("<h2> Your Character </h2>", $("#armored"));
 		$("#armored").removeClass("characterCard").addClass("playerChoice");
-		$("#enemyChoice").replaceWith($("#eren, #annie, #colossus"));
+		$("#opponentChoice").replaceWith($("#eren, #annie, #colossus"));
 		$("#eren, #annie, #colossus").removeClass("characterCard").addClass("remainingOpponents");
 		$("#armored").attr("id", "armoredPlayer");
 		$("#eren").attr("id", "erenOpponent");
@@ -62,7 +64,7 @@ var colossus = 180
 	$("#colossus").on("click" function(){
 		$("#characterCard").replaceWith("<h2> Your Character", $("#colossus"));
 		$("#colossus").removeClass("characterCard").addClass("playerChoice");
-		$("#enemyChoice").replaceWith($("#eren, #annie, #armored"));
+		$("#opponentChoice").replaceWith($("#eren, #annie, #armored"));
 		$("#eren, #annie, #armored").removeClass("characterCard").addClass("remainingOpponents");
 		$("#colossus").attr("id", "colossusPlayer");
 		$("#eren").attr("id", "erenOpponent");
@@ -72,7 +74,7 @@ var colossus = 180
 	});
 
 //Function depending on which enemy is chosen
-	function enemyChoice(result) {
+	function opponentChoice(result) {
 				//Mysterious Titan selected
 		if (result == "erenPlayer"){
 				//Female Titan
