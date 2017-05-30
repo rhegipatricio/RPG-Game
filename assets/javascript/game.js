@@ -3,7 +3,7 @@ $(document).ready(function() {
 	
 
 //These are the Variables
-
+//var titans	 = ["eren", "annie", "armored", "colossus"]
 var eren 	 = document.getElementByID("eren")
 var annie 	 = document.getElementByID("annie")
 var armored  = document.getElementByID("armored")
