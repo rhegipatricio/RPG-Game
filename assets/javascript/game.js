@@ -1,16 +1,6 @@
 $(document).ready(function() {
 
-	var audioElement = document.createElement("audio");
-      audioElement.setAttribute("src", "assets/audio/attack_on_titan_01.mp3");
-
-      $(".theme-button").on("click", function() {
-        audioElement.play();
-      });
-
-      $(".pause-button").on("click", function() {
-        audioElement.pause();
-      });
-
+	
 
 //These are the Variables
 
