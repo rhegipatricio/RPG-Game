@@ -14,12 +14,11 @@ $(document).ready(function() {
 
 //These are the Variables
 
-var eren 	 = 100
-var annie 	 = 120
-var armored  = 150
-var colossus = 180
-var wins
-var losses
+var eren 	 = document.getElementByID("eren")
+var annie 	 = document.getElementByID("annie")
+var armored  = document.getElementByID("armored")
+var colossus = document.getElementByID("colossus")
+
 
 //When Mysterious Titan is clicked/chosen, these functions take place
 	$("#eren").on("click" function (){
