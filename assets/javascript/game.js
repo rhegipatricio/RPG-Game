@@ -27,5 +27,13 @@ var colossus = 180
 
 //When Female TItan is clicked, these functions take place
 	$("#annie").on("click" function (){
-
+		$("#characterCard").replaceWith("<h2> Your Character </h2>", $("#annie"));
+		$("#annie").removeClass("characterCard").addClass("playerChoice");
+		$("#enemyChoice").replaceWith($("#eren, #armored, #colossus"));
+		$("#eren, #armored, #colossus").removeClass("characterCard").addClass("remainingOpponents");
+		$("#annie").attr("id", "anniePlayer");
+		$("#eren").attr("id", "erenOpponent");
+		$("#armored").attr("id", "armoredOpponent");
+		$("#colossus").attr("id", "colossusOpponent");
+		opponentChoice(this.id);
 	});
