@@ -109,4 +109,29 @@ var colossus = 180
 				$("#annieOpponent").on("click", function(){
 					$("#currentTitan").replaceWith($("#annieOpponent"));
 					$("#annieOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
-			});			
+			});	
+				$("#colossusOpponent").on("click", function(){
+					$("#currentTitan").replaceWith($("#colossusOpponent"));
+					$("#colossusOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
+
+			});	
+	}
+
+	else if(result == "colossusPlayer"){
+				$("#erenOpponent").on("click", function(){
+					$("currentTitan").replceWith($("#erenOpponent"));
+					$("#erenOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
+			});
+				$("#annieOpponent").on("click", function(){
+					$("currentTitan").replaceWith($("#annieOpponent"));
+					$("#annieOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
+			});
+				$("#armoredOpponent").on("click", function(){
+					$("currentTitan").replaceWith($("#armoredOpponent"));
+					$("#armoredOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
+			});
+	}
+
+
+
+}
