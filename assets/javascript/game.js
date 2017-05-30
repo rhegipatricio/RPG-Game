@@ -53,5 +53,14 @@ var colossus = 180
 
 //When Colossus Titan is clicked/chosen, these functions take place
 	$("#colossus").on("click" function(){
-		$("#characterCard").replaceWith("<h2>")
+		$("#characterCard").replaceWith("<h2> Your Character", $("#colossus"));
+		$("#colossus").removeClass("characterCard").addClass("playerChoice");
+		$("#enemyChoice").replaceWith($("#eren, #annie, #armored"));
+		$("#eren, #annie, #armored").removeClass("characterCard").addClass("remainingOpponents");
+		$("#colossus").attr("id", "colossusPlayer");
+		$("#eren").attr("id", "erenOpponent");
+		$("#annie").attr("id", "annieOpponent");
+		$("#armored").attr("id", "armoredOpponent");
+		opponentChoice(this.id);
 	});
+
