@@ -64,3 +64,49 @@ var colossus = 180
 		opponentChoice(this.id);
 	});
 
+//Function depending on which enemy is chosen
+	function enemyChoice(result) {
+				//Mysterious Titan selected
+		if (result == "erenPlayer"){
+				//Female Titan
+				$("#annieOpponent").on("click", function(){
+					$("#currentTitan").replaceWith($("#annieOpponent"));
+					$("#annieOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
+			});
+				//Armored Titan
+				$("#armoredOpponent").on("click", function(){
+					$("#currentTitan").replaceWith($("#armoredOpponent"));
+					$("#armoredOpponent").removeClass("remainingOpponent").addClass("opponentChoice");
+			});
+				//Colossus Titan
+				$("#colossusOpponent").on("click", function(){
+					$("#currentTitan").replaceWith($("#colossusOpponent"));
+					$("#colossusOpponent").removeClass("remainingOpponent").addClass("opponentChoice");
+			});
+	}
+
+//Function resulting in choice
+	else if(result == "anniePlayer"){
+				$("#erenOpponent").on("click", function(){
+					$("#currentTitan").replaceWith($("#erenOpponent"));
+					$("#erenOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
+			});
+				$("#armoredOpponent").on("click", function(){
+					$("#currentTitan").replaceWith($("#armoredOpponent"));
+					$("#armoredOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
+			});
+				$("#colossusOpponent").on("click",function(){
+					$("#currentTitan").replaceWith($("#colossusOpponent"));
+					$("#colossusOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
+			});
+	}
+	
+	else if(result == "armoredPlayer"){
+				$("#erenOpponent").on("click", function(){
+					$("#currentTitan").replaceWith($("#erenOpponent"));
+					$("#erenOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
+			});
+				$("#annieOpponent").on("click", function(){
+					$("#currentTitan").replaceWith($("#annieOpponent"));
+					$("#annieOpponent").removeClass("remainingOpponents").addClass("opponentChoice");
+			});			
